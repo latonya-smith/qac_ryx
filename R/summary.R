@@ -25,7 +25,7 @@ summary.ryx<- function(x, digits=3){
  text<- paste0(
   "Correlating ", x$y, " with ", vars,
   ". The median absolute correlation was ", round(median(abs(x$df$r)), digits),
-  " with a range from ", round(min(x$df$r), digits), " to", round(max(x$df$r), digits), ".",
+  " with a range from ", round(min(x$df$r), digits), " to ", round(max(x$df$r), digits), ". ",
   length(x$df$sigif == "***"| x$df$sigif == "**" | x$df$sigif == "*"), " out of ", length(x$x), " variables where significant at the p <0.05 level"
  )
  cat(text)

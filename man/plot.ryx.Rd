@@ -15,7 +15,7 @@ This \code{plot} function that plots the variables against the correlation value
 }
 \details{
 The plot function is a wrapper for the
-\href{https://ggplot2.tidyverse.org/reference/ggplot.html}{ggplot2}.
+\href{https://www.rdocumentation.org/packages/ggplot2/versions/3.4.0}{ggplot2}.
 }
 \examples{
 x<- ryx(Boston, y="medv")
