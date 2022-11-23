@@ -1,4 +1,4 @@
-#' @title ryx.summary
+#' @title Summarized results for ryx function in text.
 #'
 #' @description
 #' This \code{summary} function that summarizes the contents of the ryx function by
@@ -8,7 +8,7 @@
 #' @details
 #' The summary function uses the data from the results of the ryx function
 #'
-#' @param x list of y variable and x variables for correlation along with the data frame of correlations p values and level of significance
+#' @param x results from ryx function
 #'
 #' @import MASS
 #' @export

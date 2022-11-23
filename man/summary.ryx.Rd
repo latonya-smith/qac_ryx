@@ -2,12 +2,12 @@
 % Please edit documentation in R/summary.R
 \name{summary.ryx}
 \alias{summary.ryx}
-\title{ryx.summary}
+\title{Summarized results for ryx function in text.}
 \usage{
 \method{summary}{ryx}(x, digits = 3)
 }
 \arguments{
-\item{x}{list of y variable and x variables for correlation along with the data frame of correlations p values and level of significance}
+\item{x}{results from ryx function}
 }
 \description{
 This \code{summary} function that summarizes the contents of the ryx function by

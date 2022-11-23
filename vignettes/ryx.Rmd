@@ -13,8 +13,8 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
-
-```{r setup}
+The `ryx` package's main function is to visualize the specified correlation values from a dataset in a dataframe, summarized paragraph and a horizontal graph.
+```{r example}
 library(ryx)
 library(MASS)
 x<- ryx(Boston, y="medv")

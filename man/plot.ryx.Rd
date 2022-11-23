@@ -2,12 +2,12 @@
 % Please edit documentation in R/plot.R
 \name{plot.ryx}
 \alias{plot.ryx}
-\title{ryx.plot}
+\title{Visualize ryx function results in horizontal graph}
 \usage{
 \method{plot}{ryx}(x, digits = 3)
 }
 \arguments{
-\item{x}{list of y variable and x variables for correlation along with the data frame of correlations p values and level of significance}
+\item{x}{results from ryx function}
 }
 \description{
 This \code{plot} function that plots the variables against the correlation values

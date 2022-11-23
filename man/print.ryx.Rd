@@ -2,15 +2,15 @@
 % Please edit documentation in R/print.R
 \name{print.ryx}
 \alias{print.ryx}
-\title{ryx.print}
+\title{Visualize ryx function results in dataframe}
 \usage{
 \method{print}{ryx}(x, digits = 3)
 }
 \arguments{
-\item{x}{list of y variable and x variables for correlation along with the data frame of correlations p values and level of significance}
+\item{x}{results from ryx function}
 }
 \description{
-This \code{print} function presents a table of variables, correlation values of x
+This \code{print} function presents a table of correlation values of x
 variables with the specified y value(all defined from the ryx function), the corresponding
 p-values and a column that specifies how significant these p-values are.
 }

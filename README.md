@@ -15,7 +15,7 @@ You can install the development version of ryx like so:
 if(!require(remotes)){
  install.packages("remotes")
  }
- remotes::install_githib("latonya-smith/qac_ryx")
+ remotes::install_github("latonya-smith/qac_ryx")
 ```
 
 ## Example

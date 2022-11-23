@@ -1,7 +1,7 @@
-#' @title ryx.print
+#' @title Visualize ryx function results in dataframe
 #'
 #' @description
-#' This \code{print} function presents a table of variables, correlation values of x
+#' This \code{print} function presents a table of correlation values of x
 #' variables with the specified y value(all defined from the ryx function), the corresponding
 #' p-values and a column that specifies how significant these p-values are.
 #'
@@ -9,7 +9,7 @@
 #' The print function is a wrapper for the cbind base R function
 #' \href{https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/cbind}{cbind}.
 #'
-#' @param x list of y variable and x variables for correlation along with the data frame of correlations p values and level of significance
+#' @param x results from ryx function
 #'
 #' @import MASS
 #'

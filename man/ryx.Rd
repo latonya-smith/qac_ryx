@@ -2,25 +2,33 @@
 % Please edit documentation in R/ryx.R
 \name{ryx}
 \alias{ryx}
-\title{ryx.print}
+\title{Visualize correlation tests' results}
 \usage{
 ryx(data, y, x)
 }
+\arguments{
+\item{data}{dataset to run correlation tests on.}
+
+\item{y}{y variable for correlation test.}
+
+\item{x}{list of x variables for correlation tests(If this is missing then the function will run on all other numeric variables as x)}
+}
 \description{
-This \code{print} function presents a table of variables, correlation values of x
-variables with the specified y value(all defined from the ryx function), the corresponding
-p-values and a column that specifies how significant these p-values are.
+This \code{print} function presents a list containing:
+\enumerate{
+\item The y variables
+\item The list of x variables for correlation tests
+\item A dataframe of correlation values of x variables with the specified y values
+(all defined from the ryx function), the corresponding p-values and a column that
+specifies how significant these p-values are.
+}
 }
 \details{
 The print function is a wrapper for the cbind base R function
 \href{https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/cbind}{cbind}.
-
-#' @param x list of y variable and x variables for correlation along with the data frame of correlations p values and level of significance
 }
 \examples{
-
-x<- ryx(Boston, y="medv")
-print(x)
-
+x<-ryx(Boston, y="medv")
+lapply(x, head)
 
 }

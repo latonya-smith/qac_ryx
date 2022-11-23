@@ -1,22 +1,25 @@
-#' @title ryx.print
+#' @title Visualize correlation tests' results
 #'
 #' @description
-#' This \code{print} function presents a table of variables, correlation values of x
-#' variables with the specified y value(all defined from the ryx function), the corresponding
-#' p-values and a column that specifies how significant these p-values are.
+#' This \code{print} function presents a list containing:
+#' 1. The y variables
+#' 2. The list of x variables for correlation tests
+#' 3. A dataframe of correlation values of x variables with the specified y values
+#' (all defined from the ryx function), the corresponding p-values and a column that
+#' specifies how significant these p-values are.
 #'
 #' @details
 #' The print function is a wrapper for the cbind base R function
 #' \href{https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/cbind}{cbind}.
 #'
-#' #' @param x list of y variable and x variables for correlation along with the data frame of correlations p values and level of significance
+#' @param data dataset to run correlation tests on.
+#' @param x list of x variables for correlation tests(If this is missing then the function will run on all other numeric variables as x)
+#' @param y y variable for correlation test.
 #'
 #' @export
 #' @examples
-#'
-#' x<- ryx(Boston, y="medv")
-#' print(x)
-#'
+#' x<-ryx(Boston, y="medv")
+#' lapply(x, head)
 #'
 
 

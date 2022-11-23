@@ -1,4 +1,4 @@
-#' @title ryx.plot
+#' @title Visualize ryx function results in horizontal graph
 #'
 #' @description
 #' This \code{plot} function that plots the variables against the correlation values
@@ -12,7 +12,7 @@
 #' @seealso
 #' \link[ggplot2]{ggplot2}
 #'
-#' @param x list of y variable and x variables for correlation along with the data frame of correlations p values and level of significance
+#' @param x results from ryx function
 #'
 #' @import ggplot2
 #' @import MASS
