@@ -1,0 +1,25 @@
+Package: ryx
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1.0000
+Authors@R: 
+    person("Latonya", "Smith", , "lssmith@wesleyan.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: function finds the correlation values of a list of specified variables with another specified variable,
+ the p value of that relationship and the level of significance based off that p value. It also contains three functions. The
+ first is the print function that presents this information in a table. The second is the summary function that gives the median
+ and range of the correlation values along with the number of values that are significant. The third is the plot function that
+ plots the variables against the correlation values.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Imports: 
+    ggplot2,
+    MASS
