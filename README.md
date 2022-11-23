@@ -1,4 +1,4 @@
-# ryx
+# ryx Package
 
 ![](stats.png) <!-- badges: start -->
 
@@ -12,7 +12,10 @@ show these in a dataframe, summarized text and a graph.
 You can install the development version of ryx like so:
 
 ``` r
-# install.packages("ryx")
+if(!require(remotes)){
+ install.packages("remotes")
+ }
+ remotes::install_githib("latonya-smith/qac_ryx")
 ```
 
 ## Example
@@ -22,7 +25,8 @@ This is a basic example which shows how to use the functions in this package:
 ``` r
 library(ryx)
 library(MASS)
-## basic example code
+
+##Example Code
 
 x<- ryx(Boston, y="medv")
 print(x)
