@@ -17,7 +17,7 @@ You can install the development version of ryx like so:
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows how to use the functions in this package:
 
 ``` r
 library(ryx)
